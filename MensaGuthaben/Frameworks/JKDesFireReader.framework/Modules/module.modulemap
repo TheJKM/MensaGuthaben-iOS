@@ -1,0 +1,11 @@
+framework module JKDesFireReader {
+  umbrella header "JKDesFireReader.h"
+
+  export *
+  module * { export * }
+}
+
+module JKDesFireReader.Swift {
+    header "JKDesFireReader-Swift.h"
+    requires objc
+}
