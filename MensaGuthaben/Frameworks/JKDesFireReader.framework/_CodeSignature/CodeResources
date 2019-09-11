@@ -10,11 +10,11 @@
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/Pods_JKDesFireReader</key>
 		<data>
-		AjA76AJaegfOktNGJc6BvJ5cGyA=
+		mQ/h8RsYpeLPFyJMT6601Apvhq4=
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		o5aaSDNMaXQAik9pb0Uf8rK4gOw=
+		hNil/RYLHhkvS/or7wnYm3JpcpM=
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		52BCiBDjhNqJb582A0ij/OrSlGc=
+		hLlftTwtN7PHutywbp2TAPY11r4=
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		7dBBlWGvhQeuWzez6mibVrsz07w=
+		GW7S//wcMKJvfGW5f5MCiUIqdJA=
 		</data>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TeXCCkHTmllx6oykt6xj/B3CXcA=
+		iGoOrFUO1/q3c0nOWfKx+/jQMZk=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		TeXCCkHTmllx6oykt6xj/B3CXcA=
+		iGoOrFUO1/q3c0nOWfKx+/jQMZk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQUdhbZi+zXKdbXUavkNmvFE0+S62IGPhWFS+uJy8RY=
+			LECaHgM3ltX4jXRw9NYvRaZFYepqfqIyqWId+o7Bcng=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KwiZsFiY4kMgJyM6to4o7j0Zb3tRDO+TY3OZHvjRqto=
+			nY+fCxFfEh+2lCGn3s45oRCBiw3XM6tNuSM7L3MbZ3o=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xCiZ0NBzvWzTkjo7j5+r7vW7Ij2tL2YpXDpEscIXCpw=
+			EWjapJjo2TV4XIwfNteLdZY5OYuRep1MjcSr5ddXLcA=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeResources</key>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IYfD8+vVM5UZewgU8oYmbj2/Ea4EnjwjujDdQgdnezI=
+			KIx2A64ezJ2rI2DHpdueSAMm6FA6AwJvOPjweAPpcCo=
 			</data>
 		</dict>
 		<key>Headers/JKDesFireReader-Swift.h</key>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WDoqldAywkoJI19cCy3dYePoqcxmFcIzctMLbfhYZXY=
+			o/howcAKiPznEW1O5jtdSMd927+aH6KQ4E2aPwsPZCM=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WDoqldAywkoJI19cCy3dYePoqcxmFcIzctMLbfhYZXY=
+			o/howcAKiPznEW1O5jtdSMd927+aH6KQ4E2aPwsPZCM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
