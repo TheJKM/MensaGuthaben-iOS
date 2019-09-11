@@ -40,7 +40,7 @@ class Balance: ObservableObject {
     // MARK: Private helpers
     
     private func convertToEuroValue(data: Int) -> String {
-        return String(format: "%.2f", Double(data) / 1000) + "€"
+        return String(format: "%.2f", Double(data) / 1000).replacingOccurrences(of: ".", with: ",") + "€"
     }
     
     // MARK: Setters
