@@ -4,34 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/Info.plist</key>
-		<data>
-		Oyrpk+4s2Pado0iyT7D5OSEPMWM=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/Pods_JKDesFireReader</key>
-		<data>
-		mQ/h8RsYpeLPFyJMT6601Apvhq4=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		hNil/RYLHhkvS/or7wnYm3JpcpM=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		CiDcX22weCAKxUWr5wvPo5vAI/0=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		hLlftTwtN7PHutywbp2TAPY11r4=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeResources</key>
-		<data>
-		BnHAVlN9jd0/C6CnPUjIeYo9mP8=
-		</data>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		GW7S//wcMKJvfGW5f5MCiUIqdJA=
-		</data>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<data>
 		zNrYQdhC6Spn8AOlk9rmRlwyR9w=
@@ -67,55 +39,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zBVHe+35w6dM10se8s+PJT4nkDK3iB75Blzj5lrM0mY=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/Pods_JKDesFireReader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LECaHgM3ltX4jXRw9NYvRaZFYepqfqIyqWId+o7Bcng=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nY+fCxFfEh+2lCGn3s45oRCBiw3XM6tNuSM7L3MbZ3o=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OQnCmaFMhdYIfA5TyEUer0gvNaIfZofFusyHCxUarB8=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EWjapJjo2TV4XIwfNteLdZY5OYuRep1MjcSr5ddXLcA=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TWy8TbjavPq+kVXtJKop3TtuHzSNagAebrRPp9PmWAA=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_JKDesFireReader.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KIx2A64ezJ2rI2DHpdueSAMm6FA6AwJvOPjweAPpcCo=
-			</data>
-		</dict>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<dict>
 			<key>hash2</key>
