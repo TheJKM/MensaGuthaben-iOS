@@ -1,7 +1,7 @@
 # MensaGuthaben for iOS
 This is a simple tool to read the current balance on your canteen prepaid card, made possible by CoreNFC in iOS 13 and made with SwiftUI. Simply place your card at the top of yout iPhone!
 
-![MensaGuthaben on iPhone X](https://github.com/TheJKM/MensaGuthaben-iOS/preview.png)
+![MensaGuthaben on iPhone X](https://github.com/TheJKM/MensaGuthaben-iOS/raw/master/preview.png)
 
 The app will be available in the App Store as soon as possible.
 
@@ -55,3 +55,22 @@ Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthabe
 If you find a bug, or want to provide some feedback / ideas, please open an issue.
 If you want to add a new card of an unsupported university / canteen, please open an issue. I plan to add a feature to scan such cards, so we can easily find the required data.
 If you want to contribute code, please open a pull request.
+
+# Privacy
+This app does not collect any data, and does not connect to any web service.
+
+# Licence
+Licensed under the GNU General Public License v3.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
