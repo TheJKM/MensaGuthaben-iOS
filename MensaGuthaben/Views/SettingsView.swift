@@ -68,7 +68,7 @@ struct SettingsView: View {
                 Section(header: Text("OPEN SOURCE"), footer: Text("Made with ❤ and some code on the 🚂 between Marburg and Darmstadt.")
                     .font(.system(size: 13))
                     .italic()) {
-                    HttpLinkRow(url: "https://jkm-marburg.de", title: "MensaGuthaben auf GitHub")
+                    HttpLinkRow(url: "https://github.com/TheJKM/MensaGuthaben-iOS", title: "MensaGuthaben auf GitHub")
                 }
             }.listStyle(GroupedListStyle())
             .navigationBarTitle("Einstellungen")
