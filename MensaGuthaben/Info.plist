@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NFCReaderUsageDescription</key>
-	<string>Wir benötigen Zugriff auf die NFC-Schnittstelle, um deine Karte zu lesen.</string>
+	<string>Wir benoetigen Zugriff auf die NFC-Schnittstelle, um deine Karte zu lesen.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
