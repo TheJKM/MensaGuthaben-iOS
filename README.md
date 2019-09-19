@@ -1,9 +1,9 @@
 # MensaGuthaben for iOS
 This is a simple tool to read the current balance on your canteen prepaid card, made possible by CoreNFC in iOS 13 and made with SwiftUI. Simply place your card at the top of yout iPhone!
 
-![MensaGuthaben on iPhone X](https://github.com/TheJKM/MensaGuthaben-iOS/raw/master/preview.png)
+[![Available on the App Store](http://cl.ly/WouG/Download_on_the_App_Store_Badge_DE-DE_135x40.svg)](https://apps.apple.com/de/app/mensaguthaben/id1479619088)
 
-The app will be available in the App Store as soon as possible.
+![MensaGuthaben on iPhone X](https://github.com/TheJKM/MensaGuthaben-iOS/raw/master/preview.png)
 
 # Compatibility
 You will need an iPhone 7 or newer running iOS 13 or newer.
