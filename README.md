@@ -9,7 +9,9 @@ This is a simple tool to read the current balance on your canteen prepaid card, 
 You will need an iPhone 7 or newer running iOS 13 or newer.
 
 The app is tested with the following universities:
+- TU Braunschweig
 - TU Darmstadt
+- TU Ilmenau
 
 However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
 - Uni Bamberg
@@ -17,7 +19,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Bielefeld (only newer cards)
 - Uni Bochum (only newer cards)
 - FH Brandenburg
-- TU Braunschweig
 - Uni Bremen
 - HS Bremerhaven
 - TU Clausthal
@@ -31,7 +32,6 @@ However, it should also work with the cards of these universities, but they are 
 - HS Hannover
 - Uni Heidelberg
 - Uni Hohenheim (only newer cards)
-- TU Ilmenau
 - HS Koblenz
 - Uni Koblenz
 - FH Köln
