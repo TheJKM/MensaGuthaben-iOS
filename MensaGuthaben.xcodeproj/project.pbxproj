@@ -470,7 +470,7 @@
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.120;
+				CURRENT_PROJECT_VERSION = 1.0.131;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -484,10 +484,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 10.09.2019";
+				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 11.09.2019";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -501,7 +501,7 @@
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.120;
+				CURRENT_PROJECT_VERSION = 1.0.131;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -515,10 +515,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 10.09.2019";
+				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 11.09.2019";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
