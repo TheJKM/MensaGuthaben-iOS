@@ -12,8 +12,10 @@ The app is tested with the following universities:
 - TU Braunschweig
 - TU Darmstadt
 - TU Ilmenau
+- Uni Saarland
 
 However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
+- HS Aschaffenburg
 - Uni Bamberg
 - Uni Bayreuth (only print balance)
 - Uni Bielefeld (only newer cards)
@@ -43,7 +45,7 @@ However, it should also work with the cards of these universities, but they are 
 - HS Offenburg
 - Uni Osnabrück
 - HS Osnabrück
-- Uni Saarland
+- HS für Gestaltung Schwäbisch Gmünd
 - Uni Stuttgart
 - FH Würzburg
 - Uni Würzburg
