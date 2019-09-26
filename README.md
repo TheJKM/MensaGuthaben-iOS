@@ -9,14 +9,17 @@ This is a simple tool to read the current balance on your canteen prepaid card, 
 You will need an iPhone 7 or newer running iOS 13 or newer.
 
 The app is tested with the following universities:
-- TU Braunschweig
-- TU Darmstadt
-- TU Ilmenau
-- Uni Saarland
-
-However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
 - HS Aschaffenburg
 - Uni Bamberg
+- TU Braunschweig
+- TU Darmstadt
+- h_da Darmstadt
+- TU Ilmenau
+- Uni Saarland
+- FH Würzburg
+- Uni Würzburg
+
+However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
 - Uni Bayreuth (only print balance)
 - Uni Bielefeld (only newer cards)
 - Uni Bochum (only newer cards)
@@ -24,7 +27,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Bremen
 - HS Bremerhaven
 - TU Clausthal
-- h_da Darmstadt
 - TU Dresden Emeal
 - HS Freiburg
 - DH Gera Eisenbach
@@ -47,8 +49,6 @@ However, it should also work with the cards of these universities, but they are 
 - HS Osnabrück
 - HS für Gestaltung Schwäbisch Gmünd
 - Uni Stuttgart
-- FH Würzburg
-- Uni Würzburg
 - HS Zittau/Görlitz
 
 Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthaben) android app, which worked as a source for this list and some card data.
