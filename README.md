@@ -54,9 +54,9 @@ However, it should also work with the cards of these universities, but they are 
 Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthaben) android app, which worked as a source for this list and some card data.
 
 # Contributing
-If you find a bug, or want to provide some feedback / ideas, please open an issue.
-If you want to add a new card of an unsupported university / canteen, please open an issue. I plan to add a feature to scan such cards, so we can easily find the required data.
-If you want to contribute code, please open a pull request.
+- If you find a bug, or want to provide some feedback / ideas, please open an issue.
+- If you want to add a new card of an unsupported university / canteen, please open an issue. I plan to add a feature to scan such cards, so we can easily find the required data.
+- If you want to contribute code, please open a pull request.
 
 # Privacy
 This app does not collect any data, and does not connect to any web service.
