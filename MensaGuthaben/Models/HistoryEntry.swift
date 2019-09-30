@@ -1,8 +1,8 @@
 //
-//  CardScannerDelegate.swift
+//  HistoryEntry.swift
 //  MensaGuthaben
 //
-//  Created by Johannes Kreutz on 26.08.19.
+//  Created by Johannes Kreutz on 22.09.19.
 //  Copyright © 2019 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
@@ -23,7 +23,21 @@
 
 import Foundation
 
-protocol CardScannerDelegate {
-    func newDataAvailable(current: Int, previous: Int)
-    func sessionCancel()
+class HistoryEntry: Identifiable {
+    
+    // MARK: Properties
+    var id: Int32
+    var balance: Balance = Balance()
+    var card: String
+    var date: Int32
+    
+    // MARK: Initialization
+    init(id: Int32, current: Int32, previous: Int32, card: String, date: Int32) {
+        self.id = id
+        self.balance.setCurrent(current: Int(current))
+        self.balance.setPrevious(previous: Int(previous))
+        self.card = card
+        self.date = date
+    }
+    
 }

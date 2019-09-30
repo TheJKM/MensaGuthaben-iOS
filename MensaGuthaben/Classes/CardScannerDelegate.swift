@@ -1,8 +1,8 @@
 //
-//  Settings.swift
+//  CardScannerDelegate.swift
 //  MensaGuthaben
 //
-//  Created by Johannes Kreutz on 30.08.19.
+//  Created by Johannes Kreutz on 26.08.19.
 //  Copyright © 2019 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
@@ -23,29 +23,7 @@
 
 import Foundation
 
-extension UserDefaults {
-    
-    private struct Keys {
-        static let autoScanDisabled = "autoScanDisabled"
-    }
-    
-    static var autoScanDisabled: Bool {
-        get {
-            return UserDefaults.standard.bool(forKey: Keys.autoScanDisabled)
-        }
-        set {
-            UserDefaults.standard.set(newValue, forKey: Keys.autoScanDisabled)
-        }
-    }
-    
-}
-
-class SettingsStore: ObservableObject {
-
-    @Published var autoScan: Bool = !UserDefaults.autoScanDisabled {
-        didSet {
-            UserDefaults.autoScanDisabled = !self.autoScan
-        }
-    }
-
+protocol CardScannerDelegate {
+    func newDataAvailable(current: Int, previous: Int, card: Int)
+    func sessionCancel()
 }

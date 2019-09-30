@@ -120,7 +120,7 @@ class CardScanner: JKDesFireReaderDelegate {
                     // Read value
                     application.getValue(fileId: fileId)
                     .done { value in
-                        self.delegate.newDataAvailable(current: value.getValue(), previous: lastTransaction)
+                        self.delegate.newDataAvailable(current: value.getValue(), previous: lastTransaction, card: (self.reader?.getTagId())!)
                         self.reader?.stopRunningSession()
                     }.catch { error in
                         self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Fehler beim Lesen (ERR_READ_VALUE).")

@@ -29,12 +29,14 @@ class Balance: ObservableObject {
     
     @Published var current: String
     @Published var previous: String
+    @Published var currentDouble: Double
     
     // MARK: Initialization
     
     init() {
         self.current = "-,--€"
         self.previous = "-,--€"
+        self.currentDouble = 0.0
     }
     
     // MARK: Private helpers
@@ -47,6 +49,7 @@ class Balance: ObservableObject {
     
     func setCurrent(current: Int) {
         self.current = convertToEuroValue(data: current)
+        self.currentDouble = Double(current) / 1000
     }
     
     func setPrevious(previous: Int) {

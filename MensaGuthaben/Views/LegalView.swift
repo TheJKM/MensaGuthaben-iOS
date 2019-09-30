@@ -35,9 +35,9 @@ struct LegalView: View {
                 .font(.system(size: 14))
             }
             Section(header: Text("DRITTANBIETER")) {
-                TextRow(title: "MensaGuthaben nutzt Drittanbietersoftware, deren Lizenztexte hier einsehbar sind.")
+                TextRow(title: "MensaGuthaben nutzt OpenSource-Software, deren Lizenztexte hier einsehbar sind.")
                 .font(.system(size: 14))
-                NavigationLink("Drittanbieterlizenzen", destination: OpenSourceLicencesView())
+                NavigationLink("OpenSource-Lizenzen", destination: OpenSourceLicencesView())
             }
         }.listStyle(GroupedListStyle())
         .navigationBarTitle("Rechtliches")

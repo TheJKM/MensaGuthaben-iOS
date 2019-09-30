@@ -25,30 +25,52 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showSettingsModal: Bool = false
-    @ObservedObject var balance: Balance
+    @EnvironmentObject var balance: Balance
+    @EnvironmentObject var settings: SettingsStore
+    @EnvironmentObject var historyData: HistoryData
     let sceneDelegate: SceneDelegate
     
     var body: some View {
         NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .leading) {
-                    BalanceView(title: "Aktuelles Guthaben", balance: self.balance.current)
-                    BalanceView(title: "Letzte Transaktion", balance: self.balance.previous)
-                    HStack {
-                        Button(action: {
-                            self.sceneDelegate.scanCard()
-                        }) {
-                            Text("Erneut scannen")
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
+            VStack {
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(alignment: .leading) {
+                        BalanceView(title: "Aktuelles Guthaben", balance: self.balance.current)
+                        BalanceView(title: "Letzte Transaktion", balance: self.balance.previous)
+                        HStack {
+                            Button(action: {
+                                self.sceneDelegate.scanCard()
+                            }) {
+                                Text("Erneut scannen")
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                            }
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                        }.padding(.bottom, 15).padding(.top, 5)
+                        VStack {
+                            HStack {
+                                Text("VERLAUF").font(.system(size: 15)).foregroundColor(.gray)
+                                Spacer()
+                            }
+                            HStack {
+                                ChartsContainer(historyData: self.historyData.myData).frame(height: 200.0)
+                            }
                         }
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                        HStack {
+                            NavigationLink("Ganzen Verlauf ansehen", destination: HistoryView(sceneDelegate: sceneDelegate))
+                            .foregroundColor(.blue)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .cornerRadius(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 2)
+                            )
+                        }.padding(.leading, 2).padding(.trailing, 2)
                     }
-                    Spacer()
-                }
-                .padding()
+                    
+                }.padding()
             }
             .navigationBarTitle("MensaGuthaben")
             .navigationBarItems(trailing: Button(action: {
@@ -56,7 +78,7 @@ struct MainView: View {
             }) {
                 Image(systemName: "line.horizontal.3")
             }).sheet(isPresented: $showSettingsModal, onDismiss: {self.showSettingsModal = false}, content: {
-                SettingsView(settings: self.sceneDelegate.getSettings())
+                SettingsView(sceneDelegate: self.sceneDelegate).environmentObject(self.settings)
             })
         }
     }
@@ -64,6 +86,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(balance: Balance(), sceneDelegate: SceneDelegate())
+        MainView(sceneDelegate: SceneDelegate())
     }
 }

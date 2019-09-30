@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,38 +12,41 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_rund.png" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-8X-BVM">
-                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <rect key="frame" x="16" y="234.66666666666663" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="76f-fV-aoZ"/>
                                     <constraint firstAttribute="height" constant="343" id="m3Y-PS-CTU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MensaGuthaben" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGq-ja-n4W">
-                                <rect key="frame" x="50" y="221" width="314" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JKM Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vo0-4T-7OT">
-                                <rect key="frame" x="52.5" y="618" width="270" height="44"/>
+                                <rect key="frame" x="52.666666666666657" y="729" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="0CN-mA-QEz"/>
                                     <constraint firstAttribute="width" constant="270" id="U8K-at-IL7"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MensaGuthaben" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGq-ja-n4W">
+                                <rect key="frame" x="30.666666666666657" y="170" width="314" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="iTc-QM-KUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CgN-8X-BVM" firstAttribute="top" secondItem="JGq-ja-n4W" secondAttribute="bottom" constant="17.666666666666629" id="7T6-BF-v6f"/>
                             <constraint firstItem="CgN-8X-BVM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8Vz-fC-7Iy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vo0-4T-7OT" secondAttribute="bottom" constant="5" id="8iF-A9-uTt"/>
                             <constraint firstItem="Vo0-4T-7OT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HtE-to-OYo"/>
-                            <constraint firstItem="JGq-ja-n4W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WMm-oD-TdZ"/>
                             <constraint firstItem="CgN-8X-BVM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cUv-XP-uAa"/>
-                            <constraint firstItem="CgN-8X-BVM" firstAttribute="top" secondItem="JGq-ja-n4W" secondAttribute="bottom" constant="15" id="pLx-qL-h6Y"/>
+                            <constraint firstItem="JGq-ja-n4W" firstAttribute="centerX" secondItem="CgN-8X-BVM" secondAttribute="centerX" id="teg-Qq-fjP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

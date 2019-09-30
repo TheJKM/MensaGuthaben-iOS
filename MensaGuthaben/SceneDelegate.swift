@@ -32,6 +32,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, CardScannerDelegate {
     var cardScanner: CardScanner?
     let balance: Balance = Balance()
     let settings: SettingsStore = SettingsStore()
+    var history: HistoryDatabase?
+    let historyData: HistoryData = HistoryData()
+    var nextScanIsMyUpdate: Bool = false
     
     // MARK: Delegate functions
 
@@ -41,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, CardScannerDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let mainView = MainView(balance: self.balance, sceneDelegate: self)
+        let mainView = MainView(sceneDelegate: self).environmentObject(self.balance).environmentObject(self.settings).environmentObject(self.historyData)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -51,10 +54,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, CardScannerDelegate {
             window.makeKeyAndVisible()
         }
         
+        // Connect to history database
+        do {
+            try self.history = HistoryDatabase.open()
+            try self.historyData.set(data: self.history!.getHistory())
+        }
+        catch {
+            print("Error opening history database: \(error)")
+        }
+        
         // Start scanning session if auto scan is enabled
         if (settings.autoScan) {
-            scanCard()
+            self.scanCard()
         }
+        // Demo data creation for screenshots
+        /*let values: [Int32] = [14500, 12250, 8300, 5520, 25520, 21100, 19200, 16750]
+        var timestamp: Int32 = Int32(NSDate().timeIntervalSince1970)
+        values.forEach { value in
+            do {
+                try self.history?.insertScan(current: value, previous: Int32(1230), date: timestamp, card: String("XYZ"))
+            }
+            catch {
+                print("Error storing scan in history: \(error)")
+            }
+            timestamp += 86400
+        }*/
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -87,10 +111,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, CardScannerDelegate {
 
     // MARK: Card Scanner delegate functions
     
-    func newDataAvailable(current: Int, previous: Int) {
+    func newDataAvailable(current: Int, previous: Int, card: Int) {
         cardScanner = nil
         self.balance.setCurrent(current: current)
         self.balance.setPrevious(previous: previous)
+        let timestamp: Int32 = Int32(NSDate().timeIntervalSince1970)
+        if (!nextScanIsMyUpdate) {
+            do {
+                try self.history?.insertScan(current: Int32(current), previous: Int32(previous), date: timestamp, card: String(card))
+            }
+            catch {
+                print("Error storing scan in history: \(error)")
+            }
+        }
+        if (settings.myCard == "0" || self.nextScanIsMyUpdate) {
+            settings.myCard = String(card)
+            self.nextScanIsMyUpdate = false
+        }
+        loadFromMemory()
     }
     
     func sessionCancel() {
@@ -105,6 +143,48 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, CardScannerDelegate {
         }
         cardScanner = CardScanner(delegate: self)
         cardScanner?.scan()
+    }
+    
+    func updateMyCard() {
+        self.nextScanIsMyUpdate = true
+        self.scanCard()
+    }
+    
+    // MARK: History functions
+    
+    func loadFromMemory() {
+        do {
+            try self.historyData.set(data: self.history!.getHistory())
+        }
+        catch {
+            print("Error loading history: \(error)")
+        }
+    }
+    
+    func deleteFullHistory() {
+        guard self.history != nil else {
+            return
+        }
+        do {
+            try self.history!.clear()
+        }
+        catch {
+            print("Error clearing history: \(error)")
+        }
+        loadFromMemory()
+    }
+    
+    func deleteEntry(id: Int32) {
+        guard self.history != nil else {
+            return
+        }
+        do {
+            try self.history!.deleteEntry(id: id)
+        }
+        catch {
+            print("Error deleting history entry: \(error)")
+        }
+        loadFromMemory()
     }
     
     // MARK: Getters

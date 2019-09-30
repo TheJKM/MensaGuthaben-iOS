@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - PromiseKit (6.10.0):
     - PromiseKit/CorePromise (= 6.10.0)
     - PromiseKit/Foundation (= 6.10.0)
@@ -10,15 +13,18 @@ PODS:
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
+  - Charts (~> 3.3)
   - PromiseKit (~> 6.10)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - PromiseKit
 
 SPEC CHECKSUMS:
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
 
-PODFILE CHECKSUM: 6f7f574f0518a29faa6723365b1c314077140db2
+PODFILE CHECKSUM: eb13ea566fdc45dd82ceb480b091622404a2d234
 
 COCOAPODS: 1.7.5

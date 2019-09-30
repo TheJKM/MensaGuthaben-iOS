@@ -35,7 +35,7 @@ struct SupportedCanteensView: View {
             }
             supportedString += "\u{2022} \(x)"
         }
-        return supportedString
+        return supportedString + "\n"
     }
     private func getUntested() -> String {
         var untestedString: String = ""
@@ -43,7 +43,7 @@ struct SupportedCanteensView: View {
             if (untestedString != "") {
                 untestedString += "\n"
             }
-            untestedString += "\u{2022} \(x)\n"
+            untestedString += "\u{2022} \(x)"
         }
         return untestedString
     }

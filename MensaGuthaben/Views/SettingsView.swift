@@ -25,7 +25,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @ObservedObject var settings: SettingsStore
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @EnvironmentObject var settings: SettingsStore
+    let sceneDelegate: SceneDelegate
     
     let appVersion: String = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
     
@@ -57,6 +59,26 @@ struct SettingsView: View {
                 Section {
                     CheckboxSettingRow(toggle: $settings.autoScan, title: "Beim Öffnen scannen")
                 }
+                Section(header: Text("MEINE KARTE")) {
+                    HStack {
+                        Text("ID").foregroundColor(.gray)
+                        Spacer()
+                        Text(settings.myCard)
+                    }
+                    TextRow(title: "Beim ersten Scan wurde die ID deiner Karte gespeichert. Anhand dieser ID kannst du den Verlauf filtern, falls du auch Karten von Freunden gescannt hast.")
+                    Button(action: {
+                        self.sceneDelegate.updateMyCard()
+                    }) {
+                        HStack {
+                            Text("Meine Karten-ID neu setzen")
+                            .foregroundColor(.textColor(for: self.colorScheme))
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                            .foregroundColor(.gray)
+                            .font(Font.system(size: 18, weight: .semibold))
+                        }
+                    }
+                }
                 Section(header: Text("SUPPORT")) {
                     NavigationLink("Unterstützte Mensen", destination: SupportedCanteensView())
                     //NavigationLink("Meine Mensa hinzufügen", destination: AddCanteenView())
@@ -83,6 +105,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(settings: SettingsStore())
+        SettingsView(sceneDelegate: SceneDelegate())
     }
 }

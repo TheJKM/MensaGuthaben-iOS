@@ -41,6 +41,7 @@ struct HttpLinkRow: View {
                 Spacer()
                 Image(systemName: "chevron.right")
                 .foregroundColor(.gray)
+                .font(Font.system(size: 18, weight: .semibold))
             }
         }
     }

@@ -28,7 +28,7 @@ extension Color {
     static let lightTextColor = Color(white: 0.0)
     
     static let darkTextColor = Color(white: 1.0)
-    
+        
     static func textColor(for colorScheme: ColorScheme) -> Color {
         return colorScheme == .dark ? darkTextColor : lightTextColor
     }
