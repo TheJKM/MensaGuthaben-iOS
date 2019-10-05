@@ -14,6 +14,7 @@ The app is tested with the following universities:
 - TU Braunschweig
 - TU Darmstadt
 - h_da Darmstadt
+- Uni Gießen
 - TU Ilmenau
 - Uni Saarland
 - FH Würzburg
