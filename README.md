@@ -14,6 +14,7 @@ The app is tested with the following universities:
 - TU Braunschweig
 - TU Darmstadt
 - h_da Darmstadt
+- TU Dresden Emeal
 - Uni Gießen
 - TU Ilmenau
 - Uni Saarland
@@ -28,7 +29,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Bremen
 - HS Bremerhaven
 - TU Clausthal
-- TU Dresden Emeal
 - HS Freiburg
 - DH Gera Eisenbach
 - Uni Greifswald
