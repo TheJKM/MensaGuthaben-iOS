@@ -18,6 +18,7 @@ The app is tested with the following universities:
 - Uni Gießen
 - TU Ilmenau
 - Uni Saarland
+- Uni Ulm
 - FH Würzburg
 - Uni Würzburg
 
