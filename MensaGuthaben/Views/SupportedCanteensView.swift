@@ -24,7 +24,7 @@
 import SwiftUI
 
 struct SupportedCanteensView: View {
-    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Uni Gießen", "TU Ilmenau", "Uni Saarland", "Uni Ulm", FH Würzburg", "Uni Würzburg"]
+    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Uni Gießen", "TU Ilmenau", "Uni Saarland", "Uni Ulm", "FH Würzburg", "Uni Würzburg"]
     let untested: [String] = ["Uni Bayreuth (nur Druckguthaben)", "Uni Bielefeld (nur neuere Karten)", "Uni Bochum (nur neuere Karten)", "FH Brandenburg", "Uni Bremen", "HS Bremerhaven", "TU Clausthal", "HS Freiburg", "DH Gera Eisenbach", "Uni Greifswald", "MLU Halle", "HAW Hamburg", "HS Hannover", "Uni Heidelberg", "Uni Hohenheim (nur neuere Karten)", "HS Koblenz", "Uni Koblenz", "FH Köln", "Uni Köln", "Uni Leipzig", "Uni Lüneburg", "Uni Magdeburg", "DHBW Mosbach", "HS Offenburg", "Uni Osnabrück", "HS Osnabrück", "HS für Gestaltung Schwäbisch Gmünd", "Uni Stuttgart", "HS Zittau/Görlitz"]
     
     private func getSupported() -> String {
@@ -35,7 +35,7 @@ struct SupportedCanteensView: View {
             }
             supportedString += "\u{2022} \(x)"
         }
-        return supportedString + "\n"
+        return supportedString
     }
     private func getUntested() -> String {
         var untestedString: String = ""

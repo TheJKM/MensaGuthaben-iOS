@@ -81,7 +81,7 @@ struct SettingsView: View {
                 }
                 Section(header: Text("SUPPORT")) {
                     NavigationLink("Unterstützte Mensen", destination: SupportedCanteensView())
-                    NavigationLink("Meine Mensa hinzufügen", destination: AddCanteenView())
+                    //NavigationLink("Meine Mensa hinzufügen", destination: AddCanteenView())
                 }
                 Section(header: Text("ÜBER DIE APP")) {
                     TextRow(title: "© 2019 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")

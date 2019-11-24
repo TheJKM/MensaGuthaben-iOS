@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<data>
-		zNrYQdhC6Spn8AOlk9rmRlwyR9w=
+		3zUaCMovNdIEMn12szc5aHMy7IA=
 		</data>
 		<key>Headers/JKDesFireReader.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OMtgOJV5kaEgACoIePLt7KN5hkc=
+		/Ai5OrwpqE6LFzUE0juqHYqokaE=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		r2YoMXAi4DOye+MGUtCCFmDRJLk=
+		v4TZdLXvOOJwUYdrmkyLC8bHAbE=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		JUuGhmZesvx5VruxmSHAN2DzPF8=
+		K5AEg3zh1+2IDlHjfW3hvjOAgIk=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		r2YoMXAi4DOye+MGUtCCFmDRJLk=
+		v4TZdLXvOOJwUYdrmkyLC8bHAbE=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		JUuGhmZesvx5VruxmSHAN2DzPF8=
+		K5AEg3zh1+2IDlHjfW3hvjOAgIk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1m+Dno3hFmYBjOQNIMnbtMFELiUXPvXN7QZOQqwUh0=
+			EyaKnOteIGJFbpR7d4qD2V/zVhqNyLuMa4PziThzy8Q=
 			</data>
 		</dict>
 		<key>Headers/JKDesFireReader.h</key>
@@ -57,28 +57,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ceb215/G5gnp5KpFzQp3UfFaWxPtlo9HZu0fUSfQA8g=
+			IGUZ5WoPlP8FcW3dpW3G7mIMgNbFOfrZFfJWOZ+GEq0=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gHR7G4ycb/rmakQwkXeSL6zC8ojwkKgIgGCY8I6ORJY=
+			SQnYMnPsPVPV9GVOCOgBt6unBvde0sLzo6CvcY9wRIM=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ceb215/G5gnp5KpFzQp3UfFaWxPtlo9HZu0fUSfQA8g=
+			IGUZ5WoPlP8FcW3dpW3G7mIMgNbFOfrZFfJWOZ+GEq0=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gHR7G4ycb/rmakQwkXeSL6zC8ojwkKgIgGCY8I6ORJY=
+			SQnYMnPsPVPV9GVOCOgBt6unBvde0sLzo6CvcY9wRIM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
