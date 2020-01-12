@@ -11,10 +11,12 @@ You will need an iPhone 7 or newer running iOS 13 or newer.
 The app is tested with the following universities:
 - HS Aschaffenburg
 - Uni Bamberg
+- Uni Bochum
 - TU Braunschweig
 - TU Darmstadt
 - h_da Darmstadt
 - TU Dresden Emeal
+- Westfälische Hochschule Gelsenkirchen
 - Uni Gießen
 - TU Ilmenau
 - Uni Saarland
@@ -25,7 +27,6 @@ The app is tested with the following universities:
 However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
 - Uni Bayreuth (only print balance)
 - Uni Bielefeld (only newer cards)
-- Uni Bochum (only newer cards)
 - FH Brandenburg
 - Uni Bremen
 - HS Bremerhaven
