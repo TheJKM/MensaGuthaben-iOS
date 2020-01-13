@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.08.19.
-//  Copyright © 2019 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //
@@ -84,7 +84,7 @@ struct SettingsView: View {
                     //NavigationLink("Meine Mensa hinzufügen", destination: AddCanteenView())
                 }
                 Section(header: Text("ÜBER DIE APP")) {
-                    TextRow(title: "© 2019 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")
+                    TextRow(title: "© 2019 - 2020 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")
                     NavigationLink("Rechtliches", destination: LegalView())
                 }
                 Section(header: Text("OPEN SOURCE"), footer: Text("Made with ❤ and some code on the 🚂 between Marburg and Darmstadt.")

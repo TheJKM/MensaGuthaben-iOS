@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.08.19.
-//  Copyright © 2019 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //

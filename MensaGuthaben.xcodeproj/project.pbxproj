@@ -502,7 +502,7 @@
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.105;
+				CURRENT_PROJECT_VERSION = 1.1.113;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -533,7 +533,7 @@
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.105;
+				CURRENT_PROJECT_VERSION = 1.1.113;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
