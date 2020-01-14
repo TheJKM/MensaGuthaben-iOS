@@ -18,6 +18,8 @@ The app is tested with the following universities:
 - TU Dresden Emeal
 - Westfälische Hochschule Gelsenkirchen
 - Uni Gießen
+- Uni Hannover
+- HS Hannover
 - TU Ilmenau
 - Uni Saarland
 - Uni Ulm
@@ -36,7 +38,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Greifswald
 - MLU Halle
 - HAW Hamburg
-- HS Hannover
 - Uni Heidelberg
 - Uni Hohenheim (only newer cards)
 - HS Koblenz

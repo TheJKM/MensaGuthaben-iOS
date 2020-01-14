@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.09.19.
-//  Copyright © 2019 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //
@@ -47,7 +47,6 @@ struct ChartsContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: LineChartView, context: UIViewRepresentableContext<ChartsContainer>) {
-        print("Update")
         setupChartData(chart: uiView)
     }
     

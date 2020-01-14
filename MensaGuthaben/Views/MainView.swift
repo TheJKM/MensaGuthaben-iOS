@@ -25,6 +25,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showSettingsModal: Bool = false
+    @State private var buttonText: String = ""
     @EnvironmentObject var balance: Balance
     @EnvironmentObject var settings: SettingsStore
     @EnvironmentObject var historyData: HistoryData
@@ -69,7 +70,6 @@ struct MainView: View {
                             )
                         }.padding(.leading, 2).padding(.trailing, 2)
                     }
-                    
                 }.padding()
             }
             .navigationBarTitle("MensaGuthaben")
@@ -77,7 +77,8 @@ struct MainView: View {
                 self.showSettingsModal = true
             }) {
                 Image(systemName: "line.horizontal.3")
-            }).sheet(isPresented: $showSettingsModal, onDismiss: {self.showSettingsModal = false}, content: {
+                Text(self.buttonText)
+            }).sheet(isPresented: $showSettingsModal, onDismiss: {self.showSettingsModal = false; self.buttonText = (self.buttonText == "") ? " " : ""}, content: {
                 SettingsView(sceneDelegate: self.sceneDelegate).environmentObject(self.settings)
             })
         }
