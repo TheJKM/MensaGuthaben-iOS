@@ -68,9 +68,9 @@ struct HistoryView: View {
     
     var body: some View {
         VStack {
-            Picker("Anzeigemodus", selection: $displayMode) {
-                Text("Meine Karte").tag(1)
-                Text("Alle").tag(2)
+            Picker("history.mode", selection: $displayMode) {
+                Text("history.my").tag(1)
+                Text("history.all").tag(2)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.horizontal)
@@ -83,18 +83,18 @@ struct HistoryView: View {
                 }
             }
         }
-        .navigationBarTitle("Verlauf")
+        .navigationBarTitle("history.title")
         .navigationBarItems(trailing: Button(action: {
             self.deleteSheet = true
         }) {
             Image(systemName: "trash.fill")
         })
         .actionSheet(isPresented: $deleteSheet) {
-            ActionSheet(title: Text("Möchtest du den gesamten Verlauf wirklich löschen?"), buttons: [
-                .destructive(Text("Löschen"), action: {
+            ActionSheet(title: Text("history.deleteQuestion"), buttons: [
+                .destructive(Text("history.delete"), action: {
                     self.sceneDelegate.deleteFullHistory()
                 }),
-                .cancel(Text("Abbrechen"))
+                .cancel(Text("history.cancel"))
             ])
         }
     }

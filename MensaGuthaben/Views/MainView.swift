@@ -36,13 +36,13 @@ struct MainView: View {
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading) {
-                        BalanceView(title: "Aktuelles Guthaben", balance: self.balance.current)
-                        BalanceView(title: "Letzte Transaktion", balance: self.balance.previous)
+                        BalanceView(title: NSLocalizedString("main.actual", comment: ""), balance: self.balance.current)
+                        BalanceView(title: NSLocalizedString("main.previous", comment: ""), balance: self.balance.previous)
                         HStack {
                             Button(action: {
                                 self.sceneDelegate.scanCard()
                             }) {
-                                Text("Erneut scannen")
+                                Text("main.scan")
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
                             }
@@ -52,7 +52,7 @@ struct MainView: View {
                         }.padding(.bottom, 15).padding(.top, 5)
                         VStack {
                             HStack {
-                                Text("VERLAUF").font(.system(size: 15)).foregroundColor(.gray)
+                                Text("main.history").font(.system(size: 15)).foregroundColor(.gray)
                                 Spacer()
                             }
                             HStack {
@@ -60,7 +60,7 @@ struct MainView: View {
                             }
                         }
                         HStack {
-                            NavigationLink("Ganzen Verlauf ansehen", destination: HistoryView(sceneDelegate: sceneDelegate))
+                            NavigationLink("main.showfull", destination: HistoryView(sceneDelegate: sceneDelegate))
                             .foregroundColor(.blue)
                             .frame(maxWidth: .infinity)
                             .padding()
@@ -72,7 +72,7 @@ struct MainView: View {
                     }
                 }.padding()
             }
-            .navigationBarTitle("MensaGuthaben")
+            .navigationBarTitle("title")
             .navigationBarItems(trailing: Button(action: {
                 self.showSettingsModal = true
             }) {

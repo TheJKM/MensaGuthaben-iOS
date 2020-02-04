@@ -57,20 +57,20 @@ struct SettingsView: View {
         NavigationView {
             List {
                 Section {
-                    CheckboxSettingRow(toggle: $settings.autoScan, title: "Beim Öffnen scannen")
+                    CheckboxSettingRow(toggle: $settings.autoScan, title: NSLocalizedString("settings.autoscan", comment: ""))
                 }
-                Section(header: Text("MEINE KARTE")) {
+                Section(header: Text("settings.mycard")) {
                     HStack {
                         Text("ID").foregroundColor(.gray)
                         Spacer()
                         Text(settings.myCard)
                     }
-                    TextRow(title: "Beim ersten Scan wurde die ID deiner Karte gespeichert. Anhand dieser ID kannst du den Verlauf filtern, falls du auch Karten von Freunden gescannt hast.")
+                    TextRow(title: NSLocalizedString("settings.idexplanation", comment: ""))
                     Button(action: {
                         self.sceneDelegate.updateMyCard()
                     }) {
                         HStack {
-                            Text("Meine Karten-ID neu setzen")
+                            Text("settings.reset")
                             .foregroundColor(.textColor(for: self.colorScheme))
                             Spacer()
                             Image(systemName: "chevron.right")
@@ -79,25 +79,25 @@ struct SettingsView: View {
                         }
                     }
                 }
-                Section(header: Text("SUPPORT")) {
-                    NavigationLink("Unterstützte Mensen", destination: SupportedCanteensView())
-                    //NavigationLink("Meine Mensa hinzufügen", destination: AddCanteenView())
+                Section(header: Text("settings.support")) {
+                    NavigationLink("settings.supported", destination: SupportedCanteensView())
+                    //NavigationLink("settings.addmy", destination: AddCanteenView())
                 }
-                Section(header: Text("ÜBER DIE APP")) {
+                Section(header: Text("settings.about")) {
                     TextRow(title: "© 2019 - 2020 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")
-                    NavigationLink("Rechtliches", destination: LegalView())
+                    NavigationLink("settings.legal", destination: LegalView())
                 }
                 Section(header: Text("OPEN SOURCE"), footer: Text("Made with ❤ and some code on the 🚂 between Marburg and Darmstadt.")
                     .font(.system(size: 13))
                     .italic()) {
-                    HttpLinkRow(url: "https://github.com/TheJKM/MensaGuthaben-iOS", title: "MensaGuthaben auf GitHub")
+                    HttpLinkRow(url: "https://github.com/TheJKM/MensaGuthaben-iOS", title: NSLocalizedString("settings.githublink", comment: ""))
                 }
             }.listStyle(GroupedListStyle())
-            .navigationBarTitle("Einstellungen")
+            .navigationBarTitle("settings.title")
             .navigationBarItems(trailing: Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
-                Text("Fertig").bold()
+                Text("settings.done").bold()
             })
         }
     }

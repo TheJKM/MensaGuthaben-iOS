@@ -34,7 +34,7 @@ struct ChartsContainer: UIViewRepresentable {
         lineChartView.translatesAutoresizingMaskIntoConstraints = false
         lineChartView.animate(xAxisDuration: 0.5, yAxisDuration: 0.5, easingOption: .easeOutSine)
         lineChartView.noDataTextColor = UIColor.label
-        lineChartView.noDataText = "Nicht genug Scans vorhanden."
+        lineChartView.noDataText = NSLocalizedString("charts.less", comment: "")
         lineChartView.isUserInteractionEnabled = false
         lineChartView.legend.enabled = false
         lineChartView.xAxis.enabled = false

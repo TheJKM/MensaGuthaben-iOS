@@ -28,7 +28,7 @@ struct AddCanteenView: View {
         List {
             TextRow(title: "Not yet implemented.")
         }.listStyle(GroupedListStyle())
-        .navigationBarTitle("Mensa hinzufügen")
+        .navigationBarTitle("add.title")
     }
 }
 

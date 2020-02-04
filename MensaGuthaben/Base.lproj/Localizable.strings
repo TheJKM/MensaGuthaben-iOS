@@ -1,0 +1,95 @@
+/* 
+  Localizable.strings
+  MensaGuthaben
+
+  Created by Johannes Kreutz on 01.12.19.
+  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
+ 
+  This file is part of MensaGuthaben.
+
+  MensaGuthaben is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MensaGuthaben is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MensaGuthaben. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+// App wide strings
+"title" = "MensaBalance";
+
+// Main view
+"main.actual" = "Actual balance";
+"main.previous" = "Previous transaction";
+"main.scan" = "Scan again";
+"main.history" = "HISTORY";
+"main.showfull" = "Show full history";
+
+// Charts view
+"charts.less" = "Not enough scans.";
+
+// Settings view
+"settings.autoscan" = "Auto-scan on open";
+"settings.mycard" = "MY CARD";
+"settings.idexplanation" = "At first scan your card's ID was stored. With the ID you can filter the history, if you scanned your friend's cards.";
+"settings.reset" = "Re-set my card's ID";
+"settings.support" = "SUPPORT";
+"settings.supported" = "Supported canteens";
+"settings.addmy" = "Add my canteen";
+"settings.about" = "ABOUT THE APP";
+"settings.legal" = "Legal infos";
+"settings.githublink" = "MensaGuthaben on GitHub";
+"settings.title" = "Settings";
+"settings.done" = "Done";
+
+// Legal view
+"legal.disclaimertitle" = "DISCLAIMER";
+"legal.disclaimer" = "";
+"legal.licensetitle" = "LICENSE";
+"legal.license" = "";
+"legal.third" = "THIRD PARTIES";
+"legal.oss" = "MensaBalance uses OpenSource-software, whose licences are viewable here.";
+"legal.osstitle" = "OpenSource-licenses";
+"legal.title" = "Legal";
+
+// OpenSource licence view
+"oss.third" = "Third party licences";
+
+// Supported canteens view
+"supported.tested" = "TESTED CARDS";
+"supported.untested" = "NON-TESTED CARDS";
+"supported.infotext" = "The following cards should work with the app, although they're not tested yet. You used the app successfully with one of those, or another card? Write us:";
+"supported.github" = "On GitHub";
+"supported.email" = "Per E-Mail";
+"supported.title" = "Supported canteens";
+
+// Add canteen view
+"add.title" = "Add canteen";
+
+// History view
+"history.mode" = "View mode";
+"history.my" = "My card";
+"history.all" = "All";
+"history.title" = "History";
+"history.deleteQuestion" = "Do you really want to delete the whole history?";
+"history.delete" = "Delete";
+"history.cancel" = "Cancel";
+
+// History detail view
+"historyDetail.balance" = "BALANCE";
+"historyDetail.last" = "LAST TRANSACTION";
+"historyDetail.timestamp" = "TIMESTAMP";
+"historyDetail.id" = "CARD-ID";
+
+// Reading session
+"reader.subtitle" = "Please put your card at the top of your iPhone.";
+"reader.failed" = "Sorry, reading your card failed.";
+"reader.unknown" = "Sorry, reading your card failed: Unknown card";
+"reader.error" = "Sorry, reading your card failed: Error on reading";
+"reader.code" = "Sorry, reading your card failed. (Error code ";

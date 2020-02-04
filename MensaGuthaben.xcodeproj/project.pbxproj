@@ -39,6 +39,8 @@
 		8FD4FFA02313280100541DC6 /* Logo_rund.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4FF9F2313280100541DC6 /* Logo_rund.png */; };
 		8FD4FFA223132C4A00541DC6 /* JKM Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4FFA123132C4A00541DC6 /* JKM Logo.png */; };
 		8FDE3ECB23394D9B0027064C /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE3ECA23394D9B0027064C /* HistoryDetailView.swift */; };
+		8FF0B2D223EA20970025A746 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0B2D023EA20970025A746 /* Localizable.strings */; };
+		8FF0B2D623EA210B0025A746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0B2D423EA210B0025A746 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +94,11 @@
 		8FD4FF9F2313280100541DC6 /* Logo_rund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_rund.png; sourceTree = SOURCE_ROOT; };
 		8FD4FFA123132C4A00541DC6 /* JKM Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JKM Logo.png"; sourceTree = SOURCE_ROOT; };
 		8FDE3ECA23394D9B0027064C /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		8FF0B2CF23EA20100025A746 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8FF0B2D123EA20970025A746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FF0B2D323EA20B30025A746 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FF0B2D523EA210B0025A746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FF0B2D723EA21400025A746 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +178,8 @@
 				8FD4FFA123132C4A00541DC6 /* JKM Logo.png */,
 				8F625A50230F2FA600EF3F92 /* Info.plist */,
 				8F625A4A230F2FA600EF3F92 /* Preview Content */,
+				8FF0B2D023EA20970025A746 /* Localizable.strings */,
+				8FF0B2D423EA210B0025A746 /* InfoPlist.strings */,
 			);
 			path = MensaGuthaben;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 8F625A36230F2FA500EF3F92;
 			productRefGroup = 8F625A40230F2FA500EF3F92 /* Products */;
@@ -283,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F625A4F230F2FA600EF3F92 /* LaunchScreen.storyboard in Resources */,
+				8FF0B2D623EA210B0025A746 /* InfoPlist.strings in Resources */,
+				8FF0B2D223EA20970025A746 /* Localizable.strings in Resources */,
 				8FD4FFA02313280100541DC6 /* Logo_rund.png in Resources */,
 				8F625A4C230F2FA600EF3F92 /* Preview Assets.xcassets in Resources */,
 				8FD4FFA223132C4A00541DC6 /* JKM Logo.png in Resources */,
@@ -373,8 +385,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				8F625A4E230F2FA600EF3F92 /* Base */,
+				8FF0B2CF23EA20100025A746 /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FF0B2D023EA20970025A746 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF0B2D123EA20970025A746 /* Base */,
+				8FF0B2D323EA20B30025A746 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8FF0B2D423EA210B0025A746 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF0B2D523EA210B0025A746 /* Base */,
+				8FF0B2D723EA21400025A746 /* de */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -384,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -444,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -500,9 +533,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.132;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.46;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -516,10 +549,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 20.11.19";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -531,9 +564,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.132;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.46;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -547,10 +580,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben 20.11.19";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

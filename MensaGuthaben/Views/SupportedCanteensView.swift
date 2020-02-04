@@ -50,19 +50,19 @@ struct SupportedCanteensView: View {
     
     var body: some View {
         List {
-            Section(header: Text("GETESTETE KARTEN")) {
+            Section(header: Text("supported.tested")) {
                 TextRow(title: getSupported())
                 .font(.system(size: 14))
             }
-            Section(header: Text("UNGETESTETE KARTEN")) {
-                TextRow(title: "Die Karten folgender Mensen sollten mit der App funktionieren, wurden jedoch noch nicht getestet. Du hast die App erfolgreich mit einer Karte dieser Mensen oder einer hier nicht genannten Mensa genutzt? Schreib uns:")
-                HttpLinkRow(url: "https://github.com/TheJKM/MensaGuthaben-iOS", title: "Auf GitHub")
-                HttpLinkRow(url: "mailto:mensaguthaben@jkm-marburg.de", title: "Per E-Mail")
+            Section(header: Text("supported.untested")) {
+                TextRow(title: NSLocalizedString("supported.infotext", comment: ""))
+                HttpLinkRow(url: "https://github.com/TheJKM/MensaGuthaben-iOS", title: NSLocalizedString("supported.github", comment: ""))
+                HttpLinkRow(url: "mailto:mensaguthaben@jkm-marburg.de", title: NSLocalizedString("supported.email", comment: ""))
                 TextRow(title: getUntested())
                 .font(.system(size: 14))
             }
         }.listStyle(GroupedListStyle())
-        .navigationBarTitle("Unterstützte Mensen")
+        .navigationBarTitle("supported.title")
     }
 }
 

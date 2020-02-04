@@ -46,8 +46,8 @@ class CardScanner: JKDesFireReaderDelegate {
             return
         }
         reader = JKDesFireReader(start: false, delegate: self)
-        reader?.setSessionInfoText(text: "Bitte halte deine Mensakarte an die Oberkante deines iPhone.")
-        reader?.setErrorInfoText(text: "Leider konnte deine Karte nicht gelesen werden.")
+        reader?.setSessionInfoText(text: NSLocalizedString("reader.subtitle", comment: ""))
+        reader?.setErrorInfoText(text: NSLocalizedString("reader.failed", comment: ""))
         
         // Start session
         if !(reader?.createReaderSession())! {
@@ -80,7 +80,7 @@ class CardScanner: JKDesFireReaderDelegate {
             
             // Show error message if card is unknown
             guard cardKnown else {
-                self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Unbekannte Karte (ERR_APPLICATION_NOT_FOUND).")
+                self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.unknown", comment: "") + " (ERR_APPLICATION_NOT_FOUND).")
                 self.delegate.sessionCancel()
                 return
             }
@@ -100,7 +100,7 @@ class CardScanner: JKDesFireReaderDelegate {
                 
                 // Show error message if card is unknown
                 guard fileFound else {
-                    self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Unbekannte Karte (ERR_FILE_NOT_FOUND).")
+                    self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.unknown", comment: "") + " (ERR_FILE_NOT_FOUND).")
                     self.delegate.sessionCancel()
                     return
                 }
@@ -113,7 +113,7 @@ class CardScanner: JKDesFireReaderDelegate {
                     if let valueSettings = settings as? JKDesFireValueFileSettings {
                         lastTransaction = valueSettings.getValue()
                     } else {
-                        self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Fehler beim Lesen (ERR_NO_VALUE_FILE).")
+                        self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.error", comment: "") + " (ERR_NO_VALUE_FILE).")
                         self.delegate.sessionCancel()
                     }
                     
@@ -123,29 +123,29 @@ class CardScanner: JKDesFireReaderDelegate {
                         self.delegate.newDataAvailable(current: value.getValue(), previous: lastTransaction, card: (self.reader?.getTagId())!)
                         self.reader?.stopRunningSession()
                     }.catch { error in
-                        self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Fehler beim Lesen (ERR_READ_VALUE).")
+                        self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.error", comment: "") + " (ERR_READ_VALUE).")
                         self.delegate.sessionCancel()
                     }
                 }.catch { error in
-                    self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Fehler beim Lesen (ERR_READ_FILE_SETTINGS).")
+                    self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.error", comment: "") + " (ERR_READ_FILE_SETTINGS).")
                     self.delegate.sessionCancel()
                 }
                 
             }.catch { error in
-                self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden: Fehler beim Lesen (ERR_SELECT_APPLICATION).")
+                self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.error", comment: "") + " (ERR_SELECT_APPLICATION).")
                 self.delegate.sessionCancel()
             }
             
         }.catch { error in
             print("Error getting application list: " + error.localizedDescription)
-            self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden. (Fehlercode " + error.localizedDescription + ")")
+            self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.code", comment: "") + error.localizedDescription + ")")
             self.delegate.sessionCancel()
         }
     }
     
     func tagDetectionError(error: JKDesFirePublicError) {
         print("Error detecting tag: " + error.localizedDescription)
-        self.reader?.stopRunningSession(errorMessage: "Leider konnte deine Karte nicht gelesen werden. (Fehlercode " + error.localizedDescription + ")")
+        self.reader?.stopRunningSession(errorMessage: NSLocalizedString("reader.code", comment: "") + error.localizedDescription + ")")
         self.delegate.sessionCancel()
     }
     

@@ -31,16 +31,16 @@ struct HistoryDetailView: View {
     
     var body: some View {
         List {
-            Section(header: Text("GUTHABEN")) {
+            Section(header: Text("historyDetail.balance")) {
                 Text(self.current)
             }
-            Section(header: Text("LETZTE TRANSAKTION")) {
+            Section(header: Text("historyDetail.last")) {
                 Text(self.previous)
             }
-            Section(header: Text("ZEITSTEMPEL")) {
+            Section(header: Text("historyDetail.timestamp")) {
                 Text(self.date)
             }
-            Section(header: Text("KARTEN-ID")) {
+            Section(header: Text("historyDetail.id")) {
                 Text(self.card)
             }
         }.listStyle(GroupedListStyle())

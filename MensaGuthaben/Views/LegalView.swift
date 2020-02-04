@@ -26,21 +26,21 @@ import SwiftUI
 struct LegalView: View {
     var body: some View {
         List {
-            Section(header: Text("HAFTUNGSAUSSCHLUSS")) {
-                TextRow(title: "Keine Haftung für die Inhalte externer Links.\nDIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGESTELLT, EINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG FÜR DEN VORGESEHENEN ODER EINEM BESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG, JEDOCH NICHT DARAUF BESCHRÄNKT. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHEN SCHADEN ODER SONSTIGE ANSPRÜCHE HAFTBAR ZU MACHEN, OB INFOLGE DER ERFÜLLUNG EINES VERTRAGES, EINES DELIKTES ODER ANDERS IM ZUSAMMENHANG MIT DER SOFTWARE ODER SONSTIGER VERWENDUNG DER SOFTWARE ENTSTANDEN.")
+            Section(header: Text("legal.disclaimertitle")) {
+                TextRow(title: NSLocalizedString("legal.disclaimer", comment: ""))
                 .font(.system(size: 14))
             }
-            Section(header: Text("LIZENZ")) {
-                TextRow(title: "MensaGuthaben iOS\nCopyright (C) 2019 - 2020 Johannes Kreutz.\n\nDieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 3 der Lizenz oder (nach Ihrer Option) jeder späteren Version.\n\nDie Veröffentlichung dieses Programms erfolgt in der Hoffnung, dass es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.\n\nSie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe http://www.gnu.org/licenses/.")
+            Section(header: Text("legal.licensetitle")) {
+                TextRow(title: NSLocalizedString("legal.license", comment: ""))
                 .font(.system(size: 14))
             }
-            Section(header: Text("DRITTANBIETER")) {
-                TextRow(title: "MensaGuthaben nutzt OpenSource-Software, deren Lizenztexte hier einsehbar sind.")
+            Section(header: Text("legal.third")) {
+                TextRow(title: NSLocalizedString("legal.oss", comment: ""))
                 .font(.system(size: 14))
-                NavigationLink("OpenSource-Lizenzen", destination: OpenSourceLicencesView())
+                NavigationLink("legal.osstitle", destination: OpenSourceLicencesView())
             }
         }.listStyle(GroupedListStyle())
-        .navigationBarTitle("Rechtliches")
+        .navigationBarTitle("legal.title")
     }
 }
 
