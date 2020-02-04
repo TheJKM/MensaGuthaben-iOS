@@ -21,6 +21,8 @@ The app is tested with the following universities:
 - Uni Hannover
 - HS Hannover
 - TU Ilmenau
+- Uni Köln
+- FH Köln
 - Uni Saarland
 - Uni Ulm
 - FH Würzburg
@@ -42,8 +44,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Hohenheim (only newer cards)
 - HS Koblenz
 - Uni Koblenz
-- FH Köln
-- Uni Köln
 - Uni Leipzig
 - Uni Lüneburg
 - Uni Magdeburg
