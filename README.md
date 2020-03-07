@@ -27,6 +27,7 @@ The app is tested with the following universities:
 - Uni Ulm
 - FH Würzburg
 - Uni Würzburg
+- HAW Würzburg-Schweinfurt
 
 However, it should also work with the cards of these universities, but they are not tested yet. If you successfully scanned some of these (or another) card, please let me know!
 - Uni Bayreuth (only print balance)
