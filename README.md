@@ -21,6 +21,8 @@ The app is tested with the following universities:
 - Uni Hannover
 - HS Hannover
 - TU Ilmenau
+- HS Koblenz
+- Uni Koblenz
 - Uni Köln
 - FH Köln
 - Uni Saarland
@@ -43,8 +45,6 @@ However, it should also work with the cards of these universities, but they are 
 - HAW Hamburg
 - Uni Heidelberg
 - Uni Hohenheim (only newer cards)
-- HS Koblenz
-- Uni Koblenz
 - Uni Leipzig
 - Uni Lüneburg
 - Uni Magdeburg
@@ -56,7 +56,7 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Stuttgart
 - HS Zittau/Görlitz
 
-Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthaben) android app, which worked as a source for this list and some card data.
+Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthaben) android app, which worked as a source for this list and some card data. Thanks to all who tested their cards and contributed to this list!
 
 # Contributing
 - If you find a bug or want to provide some feedback/ideas, please open an issue.
