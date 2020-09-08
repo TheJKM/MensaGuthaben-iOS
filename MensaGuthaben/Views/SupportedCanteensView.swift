@@ -24,8 +24,8 @@
 import SwiftUI
 
 struct SupportedCanteensView: View {
-    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "Uni Bochum", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Westfälische Hochschule Gelsenkirchen", "Uni Gießen", "Uni Hannover", "HS Hannover", "TU Ilmenau", "HS Koblenz", "Uni Koblenz", "Uni Köln", "FH Köln", "Uni Saarland", "Uni Ulm", "FH Würzburg", "Uni Würzburg", "HAW Würzburg-Schweinfurt"]
-    let untested: [String] = ["Uni Bayreuth (nur Druckguthaben)", "Uni Bielefeld (nur neuere Karten)", "FH Brandenburg", "Uni Bremen", "HS Bremerhaven", "TU Clausthal", "HS Freiburg", "DH Gera Eisenbach", "Uni Greifswald", "MLU Halle", "HAW Hamburg", "Uni Heidelberg", "Uni Hohenheim (nur neuere Karten)", "Uni Leipzig", "Uni Lüneburg", "Uni Magdeburg", "DHBW Mosbach", "HS Offenburg", "Uni Osnabrück", "HS Osnabrück", "HS für Gestaltung Schwäbisch Gmünd", "Uni Stuttgart", "HS Zittau/Görlitz"]
+    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "Uni Bochum", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Westfälische Hochschule Gelsenkirchen", "Uni Gießen", "Uni Greifswald", "Uni Hannover", "HS Hannover", "TU Ilmenau", "HS Koblenz", "Uni Koblenz", "Uni Köln", "FH Köln", "Uni Saarland", "Uni Ulm", "FH Würzburg", "Uni Würzburg", "HAW Würzburg-Schweinfurt"]
+    let untested: [String] = ["Uni Bayreuth (nur Druckguthaben)", "Uni Bielefeld (nur neuere Karten)", "FH Brandenburg", "Uni Bremen", "HS Bremerhaven", "TU Clausthal", "HS Freiburg", "DH Gera Eisenbach", "MLU Halle", "HAW Hamburg", "Uni Heidelberg", "Uni Hohenheim (nur neuere Karten)", "Uni Leipzig", "Uni Lüneburg", "Uni Magdeburg", "DHBW Mosbach", "HS Offenburg", "Uni Osnabrück", "HS Osnabrück", "HS für Gestaltung Schwäbisch Gmünd", "Uni Stuttgart", "HS Zittau/Görlitz"]
     
     private func getSupported() -> String {
         var supportedString: String = ""

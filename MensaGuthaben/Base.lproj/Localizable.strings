@@ -25,7 +25,7 @@
 "title" = "MensaBalance";
 
 // Main view
-"main.actual" = "Actual balance";
+"main.actual" = "Current balance";
 "main.previous" = "Previous transaction";
 "main.scan" = "Scan again";
 "main.history" = "HISTORY";

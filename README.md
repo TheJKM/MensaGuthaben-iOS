@@ -18,6 +18,7 @@ The app is tested with the following universities:
 - TU Dresden Emeal
 - Westfälische Hochschule Gelsenkirchen
 - Uni Gießen
+- Uni Greifswald
 - Uni Hannover
 - HS Hannover
 - TU Ilmenau
@@ -40,7 +41,6 @@ However, it should also work with the cards of these universities, but they are 
 - TU Clausthal
 - HS Freiburg
 - DH Gera Eisenbach
-- Uni Greifswald
 - MLU Halle
 - HAW Hamburg
 - Uni Heidelberg
