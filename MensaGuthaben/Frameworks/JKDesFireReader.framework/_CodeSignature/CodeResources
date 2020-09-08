@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<data>
-		48QtpBcGuacpqJHdd6GNHo/3UA8=
+		h28Rr4B9ES5H/gEML3GCWA1LwcM=
 		</data>
 		<key>Headers/JKDesFireReader.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/YijlHyvWSKDn64C9z4pMRB5f9Q=
+		VTVgcHm7sORzz5XOozJ9VJBGWYY=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		JN36/7XZkwwZ+Ac61+ZCPba5gY4=
+		ba1Uhq5g8JhWcQ88DOJU4+Iqkoc=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eAXZ3Q/X6FywhkaMIpAzroyUvFs=
+		53FS2EUTGRkNfDMMqpa/+l0w32o=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		JN36/7XZkwwZ+Ac61+ZCPba5gY4=
+		ba1Uhq5g8JhWcQ88DOJU4+Iqkoc=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		eAXZ3Q/X6FywhkaMIpAzroyUvFs=
+		53FS2EUTGRkNfDMMqpa/+l0w32o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bX3U9wIdzaSJu/kky3glO/Tk0FP4Ec5u0S5G//pfXU0=
+			9GHQsCm9VfqV+ED6umzrts2I6xrG3qNT/MQ15It3APU=
 			</data>
 		</dict>
 		<key>Headers/JKDesFireReader.h</key>
@@ -57,28 +57,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOGbj++2xq2O98cgRp5NBiZKLWY0CyeXjEYz7wJTHzw=
+			qgB9t6o8N8TzwLtj19WcAkG8j35izkGYwVTB3phNGdI=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WsjIWiltdDu3OR7r+zTAu/AJvvVNo3Lo+K7dxZrEAgM=
+			JXN6eh4yqjKAgtAxkY/Jv/qq9d9BzJgR7EgC+dy3WSk=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOGbj++2xq2O98cgRp5NBiZKLWY0CyeXjEYz7wJTHzw=
+			qgB9t6o8N8TzwLtj19WcAkG8j35izkGYwVTB3phNGdI=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WsjIWiltdDu3OR7r+zTAu/AJvvVNo3Lo+K7dxZrEAgM=
+			JXN6eh4yqjKAgtAxkY/Jv/qq9d9BzJgR7EgC+dy3WSk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
