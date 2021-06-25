@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.08.19.
-//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2021 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //
@@ -28,16 +28,16 @@ struct SettingsView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @EnvironmentObject var settings: SettingsStore
     let sceneDelegate: SceneDelegate
-    
+
     let appVersion: String = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-    
+
     private func getBuildString() -> String {
         let appBuild: String = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
         let buildNumberParts: [String] = appBuild.components(separatedBy: ".")
         let convertMidPart: [String:String] = ["0": "A", "1": "B", "2": "C", "3": "D", "4": "E", "5": "F", "6": "G", "7": "H", "8": "I", "9": "J", "10": "K", "11": "L", "12": "M", "13": "N", "14": "O", "15": "P", "16": "Q", "17": "R", "18": "S", "19": "T", "20": "U", "21": "V", "22": "W", "23": "X", "24": "Y", "25": "Z"]
         return buildNumberParts[0] + (convertMidPart[buildNumberParts[1]] ?? "A") + buildNumberParts[2]
     }
-    
+
     private func getCompileTimeString() -> String {
         var compileDate:Date {
             let bundleName = Bundle.main.infoDictionary!["CFBundleName"] as? String ?? "Info.plist"
@@ -52,7 +52,7 @@ struct SettingsView: View {
         format.dateFormat = "dd.MM.yyyy HH:mm"
         return format.string(from: compileDate)
     }
-    
+
     var body: some View {
         NavigationView {
             List {
@@ -84,7 +84,7 @@ struct SettingsView: View {
                     //NavigationLink("settings.addmy", destination: AddCanteenView())
                 }
                 Section(header: Text("settings.about")) {
-                    TextRow(title: "© 2019 - 2020 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")
+                    TextRow(title: "© 2019 - 2021 Johannes Kreutz.\nAlle Rechte vorbehalten.\nVersion \(appVersion) Build \(getBuildString())\n(compiled \(getCompileTimeString()))")
                     NavigationLink("settings.legal", destination: LegalView())
                 }
                 Section(header: Text("OPEN SOURCE"), footer: Text("Made with ❤ and some code on the 🚂 between Marburg and Darmstadt.")

@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.08.19.
-//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2021 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //
@@ -24,9 +24,9 @@
 import SwiftUI
 
 struct SupportedCanteensView: View {
-    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "Uni Bochum", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Westfälische Hochschule Gelsenkirchen", "Uni Gießen", "Uni Greifswald", "Uni Hannover", "HS Hannover", "TU Ilmenau", "HS Koblenz", "Uni Koblenz", "Uni Köln", "FH Köln", "Uni Saarland", "Uni Ulm", "FH Würzburg", "Uni Würzburg", "HAW Würzburg-Schweinfurt"]
-    let untested: [String] = ["Uni Bayreuth (nur Druckguthaben)", "Uni Bielefeld (nur neuere Karten)", "FH Brandenburg", "Uni Bremen", "HS Bremerhaven", "TU Clausthal", "HS Freiburg", "DH Gera Eisenbach", "MLU Halle", "HAW Hamburg", "Uni Heidelberg", "Uni Hohenheim (nur neuere Karten)", "Uni Leipzig", "Uni Lüneburg", "Uni Magdeburg", "DHBW Mosbach", "HS Offenburg", "Uni Osnabrück", "HS Osnabrück", "HS für Gestaltung Schwäbisch Gmünd", "Uni Stuttgart", "HS Zittau/Görlitz"]
-    
+    let supported: [String] = ["HS Aschaffenburg", "Uni Bamberg", "Uni Bochum", "TU Braunschweig", "TU Darmstadt", "h_da Darmstadt", "TU Dresden Emeal", "Westfälische Hochschule Gelsenkirchen", "Uni Gießen", "Uni Greifswald", "Uni Hannover", "HS Hannover", "TU Ilmenau", "HS Koblenz", "Uni Koblenz", "Uni Köln", "FH Köln", "Uni Leipzig", "Uni Saarland", "Uni Ulm", "FH Würzburg", "Uni Würzburg", "HAW Würzburg-Schweinfurt"]
+    let untested: [String] = ["Uni Bayreuth (nur Druckguthaben)", "Uni Bielefeld (nur neuere Karten)", "FH Brandenburg", "Uni Bremen", "HS Bremerhaven", "TU Clausthal", "HS Freiburg", "DH Gera Eisenbach", "MLU Halle", "HAW Hamburg", "Uni Heidelberg", "Uni Hohenheim (nur neuere Karten)", "Uni Lüneburg", "Uni Magdeburg", "DHBW Mosbach", "HS Offenburg", "Uni Osnabrück", "HS Osnabrück", "HS für Gestaltung Schwäbisch Gmünd", "Uni Stuttgart", "HS Zittau/Görlitz"]
+
     private func getSupported() -> String {
         var supportedString: String = ""
         for x in supported {
@@ -47,7 +47,7 @@ struct SupportedCanteensView: View {
         }
         return untestedString
     }
-    
+
     var body: some View {
         List {
             Section(header: Text("supported.tested")) {
