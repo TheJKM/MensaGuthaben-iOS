@@ -3,7 +3,7 @@
   MensaGuthaben
 
   Created by Johannes Kreutz on 04.02.20.
-  Copyright © 2020 Johannes Kreutz. All rights reserved.
+  Copyright © 2020 - 2021 Johannes Kreutz. All rights reserved.
  
   This file is part of MensaGuthaben.
 
@@ -22,4 +22,4 @@
 */
 
 "CFBundleDisplayName" = "MensaGuthaben";
-"NSHumanReadableCopyright" = "2019 - 2020 Johannes Kreutz. Alle Rechte vorbehalten.";
+"NSHumanReadableCopyright" = "2019 - 2021 Johannes Kreutz. Alle Rechte vorbehalten.";
