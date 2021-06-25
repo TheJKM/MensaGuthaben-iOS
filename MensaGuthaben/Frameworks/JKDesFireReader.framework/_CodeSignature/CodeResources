@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JKDesFireReader-Swift.h</key>
 		<data>
-		h28Rr4B9ES5H/gEML3GCWA1LwcM=
+		znsqwppw1A0qxF8dvr5hsi0mnyQ=
 		</data>
 		<key>Headers/JKDesFireReader.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VTVgcHm7sORzz5XOozJ9VJBGWYY=
+		7HEvxF8QJIlkLBvVUqYFyBE8iOA=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ba1Uhq5g8JhWcQ88DOJU4+Iqkoc=
+		2Rb4R5m3zaPKn7OZbwA/NflCA9s=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		53FS2EUTGRkNfDMMqpa/+l0w32o=
+		IqJzl/FJedY1ipif4K1wzBX0DTs=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ba1Uhq5g8JhWcQ88DOJU4+Iqkoc=
+		2Rb4R5m3zaPKn7OZbwA/NflCA9s=
 		</data>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		53FS2EUTGRkNfDMMqpa/+l0w32o=
+		IqJzl/FJedY1ipif4K1wzBX0DTs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9GHQsCm9VfqV+ED6umzrts2I6xrG3qNT/MQ15It3APU=
+			M52WOFy/N0FAiTdqHfgspJ7jd2f/xRr6sGZHiBC4MqA=
 			</data>
 		</dict>
 		<key>Headers/JKDesFireReader.h</key>
@@ -57,28 +57,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qgB9t6o8N8TzwLtj19WcAkG8j35izkGYwVTB3phNGdI=
+			uE7Y1JRXtRzkpfYbHCcHRsGy7fgRklnap8niJAzJzHQ=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JXN6eh4yqjKAgtAxkY/Jv/qq9d9BzJgR7EgC+dy3WSk=
+			SCKE3TeU0IdLZubcROzJ4M2yskEzCBgTX21o6AqpKrQ=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qgB9t6o8N8TzwLtj19WcAkG8j35izkGYwVTB3phNGdI=
+			uE7Y1JRXtRzkpfYbHCcHRsGy7fgRklnap8niJAzJzHQ=
 			</data>
 		</dict>
 		<key>Modules/JKDesFireReader.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JXN6eh4yqjKAgtAxkY/Jv/qq9d9BzJgR7EgC+dy3WSk=
+			SCKE3TeU0IdLZubcROzJ4M2yskEzCBgTX21o6AqpKrQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

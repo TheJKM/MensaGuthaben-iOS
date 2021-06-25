@@ -1,20 +1,20 @@
 PODS:
-  - Charts (3.5.0):
-    - Charts/Core (= 3.5.0)
-  - Charts/Core (3.5.0)
-  - PromiseKit (6.13.1):
-    - PromiseKit/CorePromise (= 6.13.1)
-    - PromiseKit/Foundation (= 6.13.1)
-    - PromiseKit/UIKit (= 6.13.1)
-  - PromiseKit/CorePromise (6.13.1)
-  - PromiseKit/Foundation (6.13.1):
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.13.1):
+  - PromiseKit/UIKit (6.15.3):
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
-  - Charts (~> 3.4)
-  - PromiseKit (~> 6.13)
+  - Charts (~> 3.5)
+  - PromiseKit (~> 6.15)
 
 SPEC REPOS:
   trunk:
@@ -22,9 +22,9 @@ SPEC REPOS:
     - PromiseKit
 
 SPEC CHECKSUMS:
-  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
-  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
 
-PODFILE CHECKSUM: 038e2faced7f293c7be3424abc3ef48e7afb4075
+PODFILE CHECKSUM: e0babfa53a07dcc1b5d93d96d45d6b5bf957a3f0
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
