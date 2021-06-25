@@ -25,7 +25,6 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showSettingsModal: Bool = false
-    @State private var buttonText: String = ""
     @EnvironmentObject var balance: Balance
     @EnvironmentObject var settings: SettingsStore
     @EnvironmentObject var historyData: HistoryData
@@ -77,8 +76,8 @@ struct MainView: View {
                 self.showSettingsModal = true
             }) {
                 Image(systemName: "line.horizontal.3")
-                Text(self.buttonText)
-            }).sheet(isPresented: $showSettingsModal, onDismiss: {self.showSettingsModal = false; self.buttonText = (self.buttonText == "") ? " " : ""}, content: {
+                Text("")
+            }).sheet(isPresented: $showSettingsModal, onDismiss: {self.showSettingsModal = false}, content: {
                 SettingsView(sceneDelegate: self.sceneDelegate).environmentObject(self.settings)
             })
         }
