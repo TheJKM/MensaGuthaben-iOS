@@ -28,6 +28,7 @@ The app is tested with the following universities:
 - FH Köln
 - Uni Leipzig
 - Uni Saarland
+- Studentenwerk Schleswig-Holstein (Flensburg, Heide, Kiel, Lübeck, Wedel)
 - Uni Ulm
 - FH Würzburg
 - Uni Würzburg
