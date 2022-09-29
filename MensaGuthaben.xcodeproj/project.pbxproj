@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79E22B5F37160BE184AC7EF6 /* Pods_MensaGuthaben.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55F312F03AADFD4DFA31CE /* Pods_MensaGuthaben.framework */; };
 		8F0DA53D2319C80B0021FB7E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DA53C2319C80B0021FB7E /* Settings.swift */; };
 		8F3430582336C8C600951B79 /* HistoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3430572336C8C600951B79 /* HistoryDatabase.swift */; };
 		8F3E6EA8233AB1E60080FAD7 /* ChartsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E6EA7233AB1E60080FAD7 /* ChartsContainer.swift */; };
@@ -25,6 +24,8 @@
 		8FA970DD231499AC00F37DE7 /* DarkmodeTextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA970DC231499AC00F37DE7 /* DarkmodeTextColor.swift */; };
 		8FBBC0D123380CA700A59286 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBBC0D023380CA700A59286 /* HistoryView.swift */; };
 		8FBBC0D32338164300A59286 /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBBC0D22338164300A59286 /* HistoryData.swift */; };
+		8FC4B7F428E5966100100E82 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8FC4B7F328E5966100100E82 /* PromiseKit */; };
+		8FC4B7F728E5969200100E82 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 8FC4B7F628E5969200100E82 /* Charts */; };
 		8FD4FF802311B13200541DC6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF7F2311B13200541DC6 /* SettingsView.swift */; };
 		8FD4FF822311D2EF00541DC6 /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF812311D2EF00541DC6 /* LegalView.swift */; };
 		8FD4FF842311D40600541DC6 /* OpenSourceLicencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF832311D40600541DC6 /* OpenSourceLicencesView.swift */; };
@@ -58,9 +59,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02A08A10DA9971F0F639AB8D /* Pods-MensaGuthaben.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MensaGuthaben.release.xcconfig"; path = "Target Support Files/Pods-MensaGuthaben/Pods-MensaGuthaben.release.xcconfig"; sourceTree = "<group>"; };
-		58759B13E02729EA4F29D859 /* Pods-MensaGuthaben.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MensaGuthaben.debug.xcconfig"; path = "Target Support Files/Pods-MensaGuthaben/Pods-MensaGuthaben.debug.xcconfig"; sourceTree = "<group>"; };
-		5E55F312F03AADFD4DFA31CE /* Pods_MensaGuthaben.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MensaGuthaben.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0DA53C2319C80B0021FB7E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		8F3430572336C8C600951B79 /* HistoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDatabase.swift; sourceTree = "<group>"; };
 		8F3E6EA7233AB1E60080FAD7 /* ChartsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsContainer.swift; sourceTree = "<group>"; };
@@ -106,23 +104,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E22B5F37160BE184AC7EF6 /* Pods_MensaGuthaben.framework in Frameworks */,
 				8FD4FF9C231326FB00541DC6 /* JKDesFireReader.framework in Frameworks */,
+				8FC4B7F728E5969200100E82 /* Charts in Frameworks */,
+				8FC4B7F428E5966100100E82 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0432F349C170D9B04E0A2A00 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				58759B13E02729EA4F29D859 /* Pods-MensaGuthaben.debug.xcconfig */,
-				02A08A10DA9971F0F639AB8D /* Pods-MensaGuthaben.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		8F0B3ABF2339074B00482B54 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +140,6 @@
 			children = (
 				8F625A41230F2FA500EF3F92 /* MensaGuthaben */,
 				8F625A40230F2FA500EF3F92 /* Products */,
-				0432F349C170D9B04E0A2A00 /* Pods */,
 				C39E0D64EDE81FAEABD5FD89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -225,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				8FD4FF9A231326F800541DC6 /* JKDesFireReader.framework */,
-				5E55F312F03AADFD4DFA31CE /* Pods_MensaGuthaben.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,11 +225,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F625A53230F2FA600EF3F92 /* Build configuration list for PBXNativeTarget "MensaGuthaben" */;
 			buildPhases = (
-				6EEF67A470FA8C4E6A0B7BF0 /* [CP] Check Pods Manifest.lock */,
 				8F625A3B230F2FA500EF3F92 /* Sources */,
 				8F625A3C230F2FA500EF3F92 /* Frameworks */,
 				8F625A3D230F2FA500EF3F92 /* Resources */,
-				EDD31DFBB0CAD29E2CD0740E /* [CP] Embed Pods Frameworks */,
 				8FD4FF9E231326FB00541DC6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -249,6 +235,10 @@
 			dependencies = (
 			);
 			name = MensaGuthaben;
+			packageProductDependencies = (
+				8FC4B7F328E5966100100E82 /* PromiseKit */,
+				8FC4B7F628E5969200100E82 /* Charts */,
+			);
 			productName = MensaGuthaben;
 			productReference = 8F625A3F230F2FA500EF3F92 /* MensaGuthaben.app */;
 			productType = "com.apple.product-type.application";
@@ -278,6 +268,10 @@
 				de,
 			);
 			mainGroup = 8F625A36230F2FA500EF3F92;
+			packageReferences = (
+				8FC4B7F228E5966100100E82 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				8FC4B7F528E5969200100E82 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 8F625A40230F2FA500EF3F92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,48 +297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6EEF67A470FA8C4E6A0B7BF0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MensaGuthaben-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDD31DFBB0CAD29E2CD0740E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MensaGuthaben/Pods-MensaGuthaben-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MensaGuthaben/Pods-MensaGuthaben-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MensaGuthaben/Pods-MensaGuthaben-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F625A3B230F2FA500EF3F92 /* Sources */ = {
@@ -531,13 +483,12 @@
 		};
 		8F625A54230F2FA600EF3F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58759B13E02729EA4F29D859 /* Pods-MensaGuthaben.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.2.106;
+				CURRENT_PROJECT_VERSION = 1.2.127;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -551,10 +502,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben Development 25.06.2021";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -562,13 +516,12 @@
 		};
 		8F625A55230F2FA600EF3F92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02A08A10DA9971F0F639AB8D /* Pods-MensaGuthaben.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.2.106;
+				CURRENT_PROJECT_VERSION = 1.2.127;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
@@ -582,10 +535,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben Development 25.06.2021";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -613,6 +569,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FC4B7F228E5966100100E82 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		8FC4B7F528E5969200100E82 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FC4B7F328E5966100100E82 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FC4B7F228E5966100100E82 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		8FC4B7F628E5969200100E82 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FC4B7F528E5969200100E82 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F625A37230F2FA500EF3F92 /* Project object */;
 }
