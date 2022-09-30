@@ -3,7 +3,7 @@
 //  MensaGuthaben
 //
 //  Created by Johannes Kreutz on 24.09.19.
-//  Copyright © 2019 - 2020 Johannes Kreutz. All rights reserved.
+//  Copyright © 2019 - 2022 Johannes Kreutz. All rights reserved.
 //
 //  This file is part of MensaGuthaben.
 //
@@ -61,8 +61,7 @@ struct ChartsContainer: UIViewRepresentable {
         }
         // Create and configure chart data set
         let dataSet: LineChartDataSet = LineChartDataSet(entries: entry, label: "balance history")
-        let data: LineChartData = LineChartData()
-        data.addDataSet(dataSet)
+        let data: LineChartData = LineChartData(dataSet: dataSet)
         data.setDrawValues(true)
         dataSet.colors = [UIColor.systemBlue]
         dataSet.setCircleColor(UIColor.systemBlue)
@@ -73,7 +72,7 @@ struct ChartsContainer: UIViewRepresentable {
         guard let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: [1.0, 0.0]) else {
             return
         }
-        dataSet.fill = Fill.fillWithLinearGradient(gradient, angle: 90.0)
+        dataSet.fill = LinearGradientFill(gradient: gradient, angle: 90.0)
         dataSet.drawFilledEnabled = true
         dataSet.label = "Test"
         // Setup formatter
@@ -88,7 +87,7 @@ struct ChartsContainer: UIViewRepresentable {
     
 }
 
-class ChartFormatter: NSObject, IValueFormatter {
+class ChartFormatter: ValueFormatter {
     
     func stringForValue(_ value: Double, entry: ChartDataEntry, dataSetIndex: Int, viewPortHandler: ViewPortHandler?) -> String {
         return String(format: "%.2f", value).replacingOccurrences(of: ".", with: ",")
