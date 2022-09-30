@@ -35,28 +35,13 @@
 		8FD4FF8D2311D56500541DC6 /* CheckboxSettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF8C2311D56500541DC6 /* CheckboxSettingRow.swift */; };
 		8FD4FF8F23131DA100541DC6 /* HttpLinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF8E23131DA100541DC6 /* HttpLinkRow.swift */; };
 		8FD4FF91231323AA00541DC6 /* CardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4FF90231323AA00541DC6 /* CardScanner.swift */; };
-		8FD4FF9C231326FB00541DC6 /* JKDesFireReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD4FF9A231326F800541DC6 /* JKDesFireReader.framework */; };
-		8FD4FF9D231326FB00541DC6 /* JKDesFireReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD4FF9A231326F800541DC6 /* JKDesFireReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FD4FFA02313280100541DC6 /* Logo_rund.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4FF9F2313280100541DC6 /* Logo_rund.png */; };
 		8FD4FFA223132C4A00541DC6 /* JKM Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4FFA123132C4A00541DC6 /* JKM Logo.png */; };
 		8FDE3ECB23394D9B0027064C /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE3ECA23394D9B0027064C /* HistoryDetailView.swift */; };
+		8FE6720F28E71A150022C5AC /* JKDesFireReader in Frameworks */ = {isa = PBXBuildFile; productRef = 8FE6720E28E71A150022C5AC /* JKDesFireReader */; };
 		8FF0B2D223EA20970025A746 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0B2D023EA20970025A746 /* Localizable.strings */; };
 		8FF0B2D623EA210B0025A746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0B2D423EA210B0025A746 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		8FD4FF9E231326FB00541DC6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8FD4FF9D231326FB00541DC6 /* JKDesFireReader.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F0DA53C2319C80B0021FB7E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -91,7 +76,6 @@
 		8FD4FF8C2311D56500541DC6 /* CheckboxSettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxSettingRow.swift; sourceTree = "<group>"; };
 		8FD4FF8E23131DA100541DC6 /* HttpLinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpLinkRow.swift; sourceTree = "<group>"; };
 		8FD4FF90231323AA00541DC6 /* CardScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanner.swift; sourceTree = "<group>"; };
-		8FD4FF9A231326F800541DC6 /* JKDesFireReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKDesFireReader.framework; path = MensaGuthaben/Frameworks/JKDesFireReader.framework; sourceTree = "<group>"; };
 		8FD4FF9F2313280100541DC6 /* Logo_rund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_rund.png; sourceTree = SOURCE_ROOT; };
 		8FD4FFA123132C4A00541DC6 /* JKM Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JKM Logo.png"; sourceTree = SOURCE_ROOT; };
 		8FDE3ECA23394D9B0027064C /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
@@ -104,9 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD4FF9C231326FB00541DC6 /* JKDesFireReader.framework in Frameworks */,
 				8FC4B7F728E5969200100E82 /* Charts in Frameworks */,
 				8FC4B7F428E5966100100E82 /* PromiseKit in Frameworks */,
+				8FE6720F28E71A150022C5AC /* JKDesFireReader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +124,6 @@
 			children = (
 				8F625A41230F2FA500EF3F92 /* MensaGuthaben */,
 				8F625A40230F2FA500EF3F92 /* Products */,
-				C39E0D64EDE81FAEABD5FD89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,14 +193,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		C39E0D64EDE81FAEABD5FD89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8FD4FF9A231326F800541DC6 /* JKDesFireReader.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,7 +203,6 @@
 				8F625A3B230F2FA500EF3F92 /* Sources */,
 				8F625A3C230F2FA500EF3F92 /* Frameworks */,
 				8F625A3D230F2FA500EF3F92 /* Resources */,
-				8FD4FF9E231326FB00541DC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +212,7 @@
 			packageProductDependencies = (
 				8FC4B7F328E5966100100E82 /* PromiseKit */,
 				8FC4B7F628E5969200100E82 /* Charts */,
+				8FE6720E28E71A150022C5AC /* JKDesFireReader */,
 			);
 			productName = MensaGuthaben;
 			productReference = 8F625A3F230F2FA500EF3F92 /* MensaGuthaben.app */;
@@ -271,6 +246,7 @@
 			packageReferences = (
 				8FC4B7F228E5966100100E82 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				8FC4B7F528E5969200100E82 /* XCRemoteSwiftPackageReference "Charts" */,
+				8FE6720D28E71A150022C5AC /* XCRemoteSwiftPackageReference "JKDesFireReader" */,
 			);
 			productRefGroup = 8F625A40230F2FA500EF3F92 /* Products */;
 			projectDirPath = "";
@@ -487,10 +463,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.2.127;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben Development 25.06.2021";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MensaGuthaben 30.09.2022";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -520,10 +499,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MensaGuthaben/MensaGuthaben.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.2.127;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaGuthaben/Preview Content\"";
 				DEVELOPMENT_TEAM = EBQF48FD36;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = EBQF48FD36;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,6 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johanneskreutz.mensaguthaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "MensaGuthaben Development 25.06.2021";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MensaGuthaben 30.09.2022";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -587,6 +569,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		8FE6720D28E71A150022C5AC /* XCRemoteSwiftPackageReference "JKDesFireReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TheJKM/JKDesFireReader";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -599,6 +589,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8FC4B7F528E5969200100E82 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		8FE6720E28E71A150022C5AC /* JKDesFireReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FE6720D28E71A150022C5AC /* XCRemoteSwiftPackageReference "JKDesFireReader" */;
+			productName = JKDesFireReader;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

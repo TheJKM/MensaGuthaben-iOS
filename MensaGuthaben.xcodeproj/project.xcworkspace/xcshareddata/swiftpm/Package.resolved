@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "jkdesfirereader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TheJKM/JKDesFireReader",
+      "state" : {
+        "revision" : "7861369b7c65d1f62a2c9b79934f3a461c2fc175",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "promisekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mxcl/PromiseKit",
