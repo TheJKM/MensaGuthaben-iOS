@@ -90,7 +90,7 @@ class HistoryDatabase {
         if (sqlite3_bind_int(statement, 2, previous) != SQLITE_OK) {
             throw HistoryError.Bind(message: errorMessage)
         }
-        if (sqlite3_bind_text(statement, 3, card, -1, nil) != SQLITE_OK) {
+        if (sqlite3_bind_text(statement, 3, NSString(string: card).utf8String, -1, nil) != SQLITE_OK) {
             throw HistoryError.Bind(message: errorMessage)
         }
         if (sqlite3_bind_int(statement, 4, date) != SQLITE_OK) {
