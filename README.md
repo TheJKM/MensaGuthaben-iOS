@@ -31,6 +31,7 @@ The app is tested with the following universities:
 - HfWU Nürtingen-Geislingen
 - Uni Saarland
 - Studentenwerk Schleswig-Holstein (Flensburg, Heide, Kiel, Lübeck, Wedel)
+- HDM Stuttgart
 - Uni Stuttgart
 - Uni Ulm
 - FH Würzburg
