@@ -16,6 +16,7 @@ The app is tested with the following universities:
 - TU Darmstadt
 - h_da Darmstadt
 - TU Dresden Emeal
+- Hochschule Furtwangen
 - Westfälische Hochschule Gelsenkirchen
 - Uni Gießen
 - Uni Greifswald
@@ -27,8 +28,10 @@ The app is tested with the following universities:
 - Uni Köln
 - FH Köln
 - Uni Leipzig
+- HfWU Nürtingen-Geislingen
 - Uni Saarland
 - Studentenwerk Schleswig-Holstein (Flensburg, Heide, Kiel, Lübeck, Wedel)
+- Uni Stuttgart
 - Uni Ulm
 - FH Würzburg
 - Uni Würzburg
@@ -54,7 +57,6 @@ However, it should also work with the cards of these universities, but they are 
 - Uni Osnabrück
 - HS Osnabrück
 - HS für Gestaltung Schwäbisch Gmünd
-- Uni Stuttgart
 - HS Zittau/Görlitz
 
 Thanks to all contributors of [this](https://github.com/jakobwenzel/MensaGuthaben) android app, which worked as a source for this list and some card data. Thanks to all who tested their cards and contributed to this list!
